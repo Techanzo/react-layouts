@@ -1,0 +1,47 @@
+{
+  "name": "@techanzo/layouts",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/layout.umd.cjs",
+  "module": "./dist/layout.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/layout.js",
+      "require": "./dist/layout.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "prepare":"yarn run build"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "clsx": "^2.0.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techanzo/react-layouts.git"
+  },
+  "keywords": [],
+  "author": "peince hirani <prince.techanzo@gmail.com>",
+  "homepage": "https://github.com/Techanzo/react-layouts.git"
+}

@@ -1,0 +1,20 @@
+:root {
+  --gap: 0;
+  --direction: "row";
+  --flex-wrap: "unset";
+  --justify-content: "unset";
+  --justify-item: "unset";
+  --align-item: "unset";
+  --align-content: "unset";
+}
+
+.stack-container {
+  display: flex;
+  gap: var(--gap);
+  flex-direction: var(--direction);
+  flex-wrap: var(--flex-wrap);
+  justify-content: var(--justify-content);
+  justify-items: var(--justify-item);
+  align-items: var(--align-item);
+  align-content: var(--align-content);
+}

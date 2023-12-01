@@ -1,0 +1,18 @@
+:root {
+  --order: unset;
+  --flex: unset;
+  --flex-grow: unset;
+  --flex-shrink: unset;
+  --flex-basis: unset;
+  --align-self: unset;
+  --justify-self: unset;
+}
+.stack-item-container {
+  order: var(--order);
+  flex-grow: var(--flex-grow);
+  flex-shrink: var(--flex-shrink);
+  flex-basis: var(--flex-basis);
+  flex: var(--flex);
+  align-self: var(--align-self);
+  justify-self: var(--justify-self);
+}
