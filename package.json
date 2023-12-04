@@ -1,7 +1,7 @@
 {
   "name": "@techanzo-pvt-ltd/layouts",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.12",
   "description": "",
   "type": "module",
   "files": [
@@ -18,7 +18,11 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "prepare":"yarn run build"
+    "prepare": "yarn run build"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
@@ -42,8 +46,7 @@
     "url": "git+https://github.com/Techanzo/react-layouts.git"
   },
   "keywords": [],
-  "author": "peince hirani <prince.techanzo@gmail.com>",
-  "license":"MIT",
+  "author": "prince hirani <prince.techanzo@gmail.com>",
+  "license": "MIT",
   "homepage": "https://github.com/Techanzo/react-layouts.git"
-
 }
