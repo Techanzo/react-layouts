@@ -4,7 +4,7 @@ import useStack from "./vm";
 import Item from "./StackItem";
 import clsx from "clsx";
 
-export const Stack = ({
+ const Stack = ({
   gap,
   direction,
   flexWrap,
@@ -45,4 +45,6 @@ export const Stack = ({
 };
 
 Stack.Item = Item;
+
+export default Stack;
 

@@ -1,11 +1,11 @@
 :root {
-  --order: unset;
-  --flex: unset;
-  --flex-grow: unset;
-  --flex-shrink: unset;
-  --flex-basis: unset;
-  --align-self: unset;
-  --justify-self: unset;
+  --order: 0;
+  --flex: 0 1 auto;
+  --flex-grow: 0;
+  --flex-shrink: 1;
+  --flex-basis: auto;
+  --align-self: auto;
+  --justify-self: auto;
 }
 .stack-item-container {
   order: var(--order);
