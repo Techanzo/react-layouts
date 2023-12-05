@@ -1,11 +1,11 @@
 :root {
   --gap: 0;
   --direction: "row";
-  --flex-wrap: "norap";
+  --flex-wrap: "nowrap";
   --justify-content: "flex-start";
   --justify-item: "legacy";
   --align-item: "normal";
-  --align-content: "stretch";
+  --align-content: "stretch"
 }
 
 .stack-container {

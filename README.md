@@ -1,30 +1,88 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# layouts
 
-Currently, two official plugins are available:
+This library helps us to create simple components like Stack , Grid and mosaic grid.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Install the packag in your directory with
 
-- Configure the top-level `parserOptions` property like this:
+Npm
+```bash
+  npm install @techanzo-pvt-ltd/layouts
+```
+Yarn
+```bash
+  yarn add @techanzo-pvt-ltd/layouts
+```    
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+```javascript
+import {Stack} from '@techanzo-pvt-ltd/layouts'
+
+function App() {
+  return (
+      <Stack >
+      {children}
+      </Stack>
+      )
 }
 ```
+You can use `Stack` for flex countainer properties.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```javascript
+import {Stack} from '@techanzo-pvt-ltd/layouts'
+
+function App() {
+  return (
+      <Stack >
+        <Stack.Item>Test-1</Stack.Item>
+        <Stack.Item>Test-2</Stack.Item>
+        <Stack.Item>Test-3</Stack.Item>
+      </Stack>
+      )
+}
+```
+You can use `Stack.Item` for flex clild properties or you can use your `components` or `div` etc...
+
+
+
+
+## API Reference
+
+`<Stack />`
+
+Create flex container
+
+`<Stack.Item />`
+
+Create flex child container
+
+
+
+## Properties from Stack
+
+- gap
+- direction
+- flex-wrap
+- justify-content
+- justify-item
+- align-item
+- align-content
+
+## Properties from Stack.Item
+
+- order
+- flex
+- flex-grow
+- flex-shrink
+- flex-basis
+- align-self
+- justify-self
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
