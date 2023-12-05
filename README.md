@@ -6,7 +6,7 @@ This library helps us to create simple components like Stack , Grid and mosaic g
 
 ## Installation
 
-Install the packag in your directory with
+Install the package in your directory with
 
 Npm
 ```bash
@@ -67,8 +67,8 @@ Create flex child container
 - direction
 - flex-wrap
 - justify-content
-- justify-item
-- align-item
+- justify-items
+- align-items
 - align-content
 
 ## Properties from Stack.Item
