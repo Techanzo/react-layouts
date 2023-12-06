@@ -1,7 +1,7 @@
 {
   "name": "@techanzo-pvt-ltd/layouts",
   "private": false,
-  "version": "0.0.18",
+  "version": "0.0.19",
   "type": "module",
   "main": "./dist/layout.umd.cjs",
   "module": "./dist/layout.js",
@@ -36,8 +36,6 @@
     "vite-plugin-dts": "^3.6.4",
     "vite-plugin-lib-inject-css": "^1.3.0"
   },
-
-
   "files": [
     "dist"
   ],
